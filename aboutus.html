@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+  <meta carset="UTF-8" />
+  <title>South Canterbury's Premier Wildlife Park African Area</title>
+  <link rel="icon" href="iconzoo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cabin+Sketch&family=Monoton&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to South Canterbury's Premier Wildlife Park!</h1>
+  </header>
+  <nav>
+    <a href="index.html" class="nav1"><img src="iconhome.svg" alt="icon" width="20" height="20" />Home</a>
+    <a href="africanarea.html"><img src="iconcheetah.svg" alt="icon" width="20" height="20" />About African Area</a>
+    <a href="americanarea.html"><img src="iconbison1.svg" alt="icon" width="20" height="20" /> About South America Area</a>
+    <a href="arcticarea.html"><img src="iconfox.svg" alt="icon" width="20" height="20" />About Arctic Area</a>
+    <a href="afrsavastars.html"><img src="icongiraff.svg" alt="icon" width="20" height="20" />Meet the Stars of Our African Savannah</a>
+    <a href="amewildstars.html"><img src="iconbison2.svg" alt="icon" width="20" height="20" />Meet the Stars of Our American Wilderness</a>
+    <a href="encarctstars.html"><img src="iconpolarbear.svg" alt="icon" width="20" height="20" />Meet the Stars of Our Enchanting Arctic Tundra</a>
+  </nav>
+  <main>
+    <h2>Meet the Young Visionaries: Alex and Taylor</h2>
+    <p class="paragraph1">At just 20 years old, Alex and Taylor, the dynamic duo behind South Canterbury's Premier Wildlife Park, have already made a significant impact in the world of wildlife conservation and education. Their passion for animals and the environment started at a young age, leading them to pursue their dream of creating a unique wildlife park that fosters a strong connection between people and nature.</p>
+    <p class="paragraph2">Alex, an avid wildlife enthusiast with a keen eye for detail, has been instrumental in designing the park's innovative and immersive habitats. Alex's deep understanding of animal behavior and welfare ensures that every aspect of the park prioritizes the comfort and well-being of its residents. From hands-on experience working with wildlife rehabilitation centers to extensive research, Alex's commitment to the animals is truly inspiring.</p>
+    <p class="paragraph3">Taylor, a natural-born educator with a flair for communication, is responsible for the park's diverse range of educational programs and activities. Taylor's infectious enthusiasm for wildlife and conservation resonates with visitors of all ages, making learning both engaging and enjoyable. With a background in environmental science, Taylor is dedicated to raising awareness about the importance of protecting our planet's rich biodiversity.</p>
+    <p class="paragraph4">Together, Alex and Taylor have turned their vision into a reality, creating a wildlife park that not only showcases some of the world's most extraordinary animals but also inspires a new generation of wildlife enthusiasts and conservationists. Their passion, dedication, and determination at such a young age serve as a testament to the power of following your dreams and making a difference in the world.</p>
+  </main>
+  <footer>
+    <p class="footer">&copy; Ray Maeda Craighead 2023</p>
+  </footer>
+</body>
+
+<style>
+  body {
+    display: grid;
+    grid:
+      " h   h   n " auto
+      " m   m   m " auto
+      " m   m   m " auto
+      " f   f   f " auto
+      / 1fr 5fr 2fr;
+  }
+  header {
+    grid-area: h;
+  }
+  nav {
+    grid-area: n;
+  }
+  main {
+    grid-area: m;
+  }
+  footer {
+    grid-area: f;
+  }
+  * {
+    background-color: #7c90db;
+    text-align: center;
+  }
+  h1 {
+    font-family: "Monoton", cursive;
+    font-size: 70px;
+    color: #aaefdf;
+    padding: 10% 10%;
+    animation: img_anime 20s ease infinite;
+    background-size: cover;
+  }
+  a {
+    text-decoration: double;
+    color: black;
+    border: 1px solid black;
+    font-weight: 200;
+    border-radius: 10em;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    margin-bottom: 9%;
+    display: inline-block;
+    background-color: #7c90db;
+    border: 2px solid #aaefdf;
+    width: 300px;
+    height: 50px;
+  }
+  a:hover {
+    border-color: transparent;
+  }
+  .nav1 {
+    margin-top: 18%;
+  }
+  h2 {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 60px;
+  }
+  p {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .paragraph1 .paragraph2 .paragraph3 .paragraph4 {
+    padding-bottom: 4%;
+    margin: auto;
+  }
+  .footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #c4a381;
+    padding: 2% 2%;
+    margin-top: 2%;
+  }
+  @keyframes img_anime {
+    0% {
+      background-image: url("lion.jpg");
+    }
+    25% {
+      background-image: url("arcticfox.jpg");
+    }
+    50% {
+      background-image: url("polarbear.jpg");
+    }
+    75% {
+      background-image: url("cheetah.jpg");
+    }
+    100% {
+      background-image: url("beaver.jpg");
+    }
+  }
+</style>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<head>
+  <meta carset="UTF-8" />
+  <title>South Canterbury's Premier Wildlife Park Enchanting Arctic Tundra Stars</title>
+  <link rel="icon" href="iconzoo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cabin+Sketch&family=Monoton&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to South Canterbury's Premier Wildlife Park!</h1>
+  </header>
+  <nav>
+    <a href="index.html" a class="nav1"><img src="iconhome.svg" alt="icon" width="20" height="20" />Home</a>
+    <a href="africanarea.html"><img src="iconcheetah.svg" alt="icon" width="20" height="20" />About African Area</a>
+    <a href="americanarea.html"><img src="iconbison1.svg" alt="icon" width="20" height="20" />About American Area</a>
+    <a href="arcticarea.html"><img src="iconfox.svg" alt="icon" width="20" height="20" />About Arctic Area</a>
+    <a href="afrsavastars.html"><img src="icongiraff.svg" alt="icon" width="20" height="20" />Meet the Stars of Our African Savannah</a>
+    <a href="amewildsstars.html"><img src="iconbison2.svg" alt="icon" width="20" height="20" />Meet the Stars of Our American Wilderness</a>
+    <a href="aboutus.html"><img src="iconus.svg" alt="icon" width="20" height="20" />About Us</a>
+  </nav>
+  <main>
+    <h2>Meet the Stars of Our Enchanting Arctic Tundra</h2>
+    <ul>
+      <p class="title">Polar Bears:</p>
+      <li>
+        <img src="bison-2-philip-brown.jpg" width="650" height="400" alt="bison" />
+        <p class="paragraph1">Introducing our majestic polar bear duo, Aurora and Frost. These awe-inspiring creatures are the largest land carnivores on Earth and are perfectly adapted to life in the harsh Arctic environment. Watch as Aurora and Frost demonstrate their incredible swimming and hunting skills in our expansive Arctic habitat. Learn about their unique adaptations, their critical role in the Arctic ecosystem, and the urgent conservation efforts in place to address the threats they face due to climate change and habitat loss.</p>
+      </li>
+      <p class="title">Arctic Foxes:</p>
+      <li>
+        <img src="moose-1-sam-te-kiefte.jpg" width="500" height="650" alt="moose" />
+        <p class="paragraph2">Meet our playful arctic fox pair, Snow and Ice. These charming, nimble creatures are known for their striking white winter coats and incredible adaptability in the frigid Arctic climate. Observe Snow and Ice as they display their keen hunting instincts, agility, and social behaviors in our Arctic area. Discover more about their remarkable adaptations, their complex family structure, and the ongoing conservation efforts aimed at protecting their natural habitats and populations.</p>
+      </li>
+      <p class="title">Fur Seals:</p>
+      <li>
+        <img src="beaver-1-svetozar-cenisev.jpg" width="500" height="600" alt="beavers" />
+        <p class="paragraph3">Say hello to our delightful fur seal family, Splash, Wave, and their playful pups. These endearing marine mammals are known for their dense fur, impressive agility in water, and their ability to thrive in the icy Arctic waters. Watch as Splash, Wave, and their pups demonstrate their incredible swimming and diving abilities, while also showcasing their social interactions and vocalizations. Learn about their unique physiology, their importance in the Arctic food chain, and the conservation efforts in place to ensure the survival and protection of these captivating creatures.</p>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <p class="footer">&copy; Ray Maeda Craighead 2023</p>
+  </footer>
+</body>
+
+<style>
+  body {
+    display: grid;
+    grid:
+      " h   h   n " auto
+      " m   m   m " auto
+      " m   m   m " auto
+      " f   f   f " auto
+      / 1fr 5fr 2fr;
+  }
+  header {
+    grid-area: h;
+  }
+  nav {
+    grid-area: n;
+  }
+  main {
+    grid-area: m;
+  }
+  footer {
+    grid-area: f;
+  }
+  * {
+    background-color: #7c90db;
+    text-align: center;
+  }
+  h1 {
+    font-family: "Monoton", cursive;
+    font-size: 70px;
+    color: #aaefdf;
+    margin-top: 15%;
+    padding-bottom: 10%;
+    background-size: cover;
+  }
+  a {
+    text-decoration: double;
+    color: black;
+    border: 1px solid black;
+    font-weight: 200;
+    border-radius: 10em;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    margin-bottom: 5%;
+    display: inline-block;
+    background-color: #7c90db;
+    border: 2px solid #aaefdf;
+    width: 300px;
+    height: 50px;
+  }
+  a:hover {
+    border-color: transparent;
+  }
+  .nav1 {
+    margin-top: 20%;
+  }
+  h2 {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 60px;
+  }
+  .title {
+    font-size: 42px;
+    text-decoration: underline;
+  }
+  p {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 25px;
+    padding-bottom: 2%;
+    line-height: 40px;
+  }
+  ul li {
+    display: flex;
+    margin-top: 40px;
+  }
+  ul li:nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+  .footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #c4a381;
+    padding: 2% 2%;
+  }
+</style>

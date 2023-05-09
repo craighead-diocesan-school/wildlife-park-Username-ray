@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+  <meta carset="UTF-8" />
+  <title>South Canterbury's Premier Wildlife Park Home</title>
+  <link rel="icon" href="iconzoo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Cabin+Sketch&family=Monoton&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to South Canterbury's Premier Wildlife Park!</h1>
+  </header>
+  <nav>
+    <a href="africanarea.html" class="nav1"><img src="iconcheetah.svg" alt="icon" width="20" height="20" />About African Area</a>
+    <a href="americanarea.html"><img src="iconbison1.svg" alt="icon" width="20" height="20" />About American Area</a>
+    <a href="arcticarea.html"><img src="iconfox.svg" alt="icon" width="20" height="20" />About Arctic Area</a>
+    <a href="afrsavastars.html"><img src="icongiraff.svg" alt="icon" width="20" height="20" />Meet the Stars of Our African Savannah</a>
+    <a href="amewildstars.html"><img src="iconbison2.svg" alt="icon" width="20" height="20" />Meet the Stars of Our American Wilderness</a>
+    <a href="encarctstars.html"><img src="iconpolarbear.svg" alt="icon" width="20" height="20" />Meet the Stars of Our Enchanting Arctic Tundra</a>
+    <a href="aboutus.html"><img src="iconus.svg" alt="icon" width="20" height="20" />About Us</a>
+  </nav>
+  <main>
+    <h2>Home</h2>
+    <p class="paragraph1">Embark on an unforgettable adventure at our unique wildlife park, nestled in the heart of South Canterbury, New Zealand. Our park is home to a diverse collection of incredible animals from three distinct ecosystems: the African Savannah, the American Wilderness, and the Arctic Tundra. Get up close and personal with majestic lions, playful arctic foxes, and gentle giraffes, all within our carefully designed and maintained habitats that prioritize animal welfare and conservation.</p>
+    <p>Join us as we celebrate the beauty of nature and inspire a new generation of wildlife enthusiasts. Our park offers a range of immersive experiences, educational programs, and engaging activities for visitors of all ages. Plan your visit today and discover the wonders of the animal kingdom at South Canterbury's Premier Wildlife Park!</p>
+  </main>
+  <footer>
+    <p class="footer">&copy; Ray Maeda Craighead 2023</p>
+  </footer>
+</body>
+
+<style>
+  body {
+    display: grid;
+    grid:
+      " h   h   n " auto
+      " m   m   m " auto
+      " m   m   m " auto
+      " f   f   f " auto
+      / 1fr 5fr 2fr;
+  }
+  header {
+    grid-area: h;
+  }
+  nav {
+    grid-area: n;
+  }
+  main {
+    grid-area: m;
+  }
+  footer {
+    grid-area: f;
+  }
+  * {
+    background-color: #7c90db;
+    text-align: center;
+  }
+  h1 {
+    font-family: "Monoton", cursive;
+    font-size: 70px;
+    color: #aaefdf;
+    padding: 10% 10%;
+    animation: img_anime 20s ease infinite;
+    background-size: cover;
+  }
+  a {
+    text-decoration: double;
+    color: black;
+    border: 1px solid black;
+    font-weight: 200;
+    border-radius: 10em;
+    padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+    margin-bottom: 9%;
+    display: inline-block;
+    background-color: #7c90db;
+    border: 2px solid #aaefdf;
+    width: 300px;
+    height: 50px;
+  }
+  a:hover {
+    border-color: transparent;
+  }
+  .nav1 {
+    margin-top: 18%;
+  }
+  h2 {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 60px;
+  }
+  p {
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .paragraph1 {
+    padding-bottom: 2%;
+  }
+  .footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #c4a381;
+    padding: 2% 2%;
+  }
+  @keyframes img_anime {
+    0% {
+      background-image: url("lion.jpg");
+    }
+    25% {
+      background-image: url("arcticfox.jpg");
+    }
+    50% {
+      background-image: url("polarbear.jpg");
+    }
+    75% {
+      background-image: url("cheetah.jpg");
+    }
+    100% {
+      background-image: url("beaver.jpg");
+    }
+  }
+</style>
